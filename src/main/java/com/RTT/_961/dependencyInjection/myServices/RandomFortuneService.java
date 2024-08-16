@@ -2,6 +2,8 @@ package com.RTT._961.dependencyInjection.myServices;
 
 import org.springframework.stereotype.Component;
 
+import java.util.Random;
+
 @Component
 public class RandomFortuneService implements FortuneServices {
     // create an array of strings

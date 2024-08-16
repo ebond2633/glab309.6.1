@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
     @Autowired
     @Qualifier("randomFortuneService")
-    private FortuneService fortuneService;
+    private FortuneServices fortuneService;
 
     // default constructor
     public TennisCoach() {
     }
-    public TennisCoach(FortuneService theFortuneService) {
+    public TennisCoach(FortuneServices theFortuneService) {
         fortuneService = theFortuneService;
     }
 
